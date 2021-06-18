@@ -28,7 +28,7 @@ if(process.env.DB_HOST) {
 
 app.get('/fibonacci/:n' , function(req,res){
 
-  // high cpu usage function
+  // high cpu usage function  fibonacci
   var value = fibonacci(req.params.n);
 
   res.render("fibonacci" , {index:req.params.n, value:value});

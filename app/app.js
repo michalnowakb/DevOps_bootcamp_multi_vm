@@ -3,7 +3,7 @@ var app = express();
 var exec = require('child_process').exec;
 var mongoose = require('mongoose');
 var Post = require('./models/post');
-// setting app
+
 app.set('view engine' , 'ejs');
 
 app.use(express.static('public'));
